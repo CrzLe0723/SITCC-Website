@@ -1,1 +1,1800 @@
+<!DOCTYPE html>
+
+
+<!--Version	Meaning
+v1.0	Launch
+v1.1	Images + polish
+v1.2	Achievements auto-updates
+v2.0	Major redesign (later) -->
+
+<!-- Version 2.0 Road map
+v2.0
+├─ Visual identity
+│  ├─ Logo / badge
+│  ├─ Color polish
+│  └─ Typography tuning
+├─ Section icons
+├─ Styled game cards
+├─ Light background patterns
+└─ Accessibility check
+-->
+
+<!-- All versions roadmap too summary
+
+v1.0 – Launch
+• Structure complete
+• Quotes finished
+• Admin-safe
+• Content-first
+
+v1.1 – Visual Context
+• Real photos
+• Captions
+• Minor polish
+• Still lightweight
+
+v1.2 – Automation
+• Auto achievements
+• Sheets integration
+• Less manual work
+
+v2.0 – Visual Redesign
+• Graphics
+• New theme
+• Layout changes
+• Branding upgrade
+-->
+
+
+<!--Gallery section/ photos of the club
+
+
+
+  <section id="gallery">
+    <h2>Club Moments</h2>
+
+        
+    <figure class="card">
+      <img src="https://postimg.cc/bd4zJvMN" alt="Students working on the game Tag">
+      <figcaption>Students working on the game Tag.</figcaption>
+    </figure>
+
+    <figure class="card">
+      <div style="position:relative; width:100%; height:0px; padding-bottom:74.760%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/40rt9e?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+      <figcaption>Students playing in the school Tag tournament</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://postimg.cc/R3fNJD6J" alt="Final two champions in the Tag Tournament">
+      <figcaption>Final two people in the school Tag Tournament</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://postimg.cc/k2MLxwSC" alt="Picture of the SITCC crew">
+      <figcaption>Picture of the coding club crew</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://postimg.cc/RJzDqTmp" alt="SITCC crew next to computers">
+      <figcaption>SITCC crew taking a picture next to some computers</figcaption>
+    </figure>
+  </section>
+
+      <a href="#gallery">Gallery</a>
+
+      CSS
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <title>SITCC – Coding Club Arcade</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/3031scf4/SITCC-Fav-Icon.png">
+    
+
+
+    
+    <style>
+      /* GENERAL STYLES */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #0f172a;
+        color: #e5e7eb;
+        scroll-behavior: smooth;
+      }
+     
+
+      h2 { color: #38bdf8; margin-top: 0; }
+      header h1 { font-family: "Press Start 2P", sans-serif; margin: 0; }
+
+      /* NAVIGATION */
+      nav {
+        background: #020617;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      /* BLOCKQUOTE */
+      blockquote {
+        margin: 20px 0;
+        padding: 15px 20px;
+        background: #0f172a;        /* matches site background */
+        color: #e5e7eb;             /* readable text */
+        border-left: 4px solid #38bdf8;
+        font-style: italic;
+        border-radius: 6px;
+      }
+
+      blockquote footer {
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: #94a3b8;
+      }
+
+      nav a {
+        color: #e5e7eb;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s ease;
+      }
+
+      nav a:hover { color: #38bdf8; }
+
+      /* SECTIONS */
+      section { padding: 40px 20px; max-width: 900px; margin: auto; }
+
+      .card {
+        background: #1e293b;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover { transform: scale(1.04); }
+      .card h3 { color: #38bdf8; }
+
+      iframe { max-width: 100%; border: none; height: auto; aspect-ratio: 4 / 3; }
+      
+
+      /* FOOTER */
+      footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 0.9em;
+        color: #94a3b8;
+      }
+
+      /* LINKS - GLOBAL */
+      a { color: #38bdf8; text-decoration: none; }
+      a:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+
+      /* SCROLL TO TOP BUTTON */
+      .scroll-top {
+        display: none; /* start hidden */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #38bdf8;
+        color: #020617;
+        padding: 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-weight: bold;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+      }
+      
+      .scroll-top.show {
+        display: block;
+      }
+
+      .scroll-top.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .scroll-top:hover {
+        background: #0ea5e9;
+        transform: scale(1.1);
+        transition: transform 0.2s, background 0.2s;
+      }
+
+
+      /* HEADER */
+      header {
+        position: relative;
+        background: #1e293b;
+        padding: 60px 20px 40px 20px;
+        text-align: center;
+      }
+
+      .floating-block {
+        position: absolute;
+        background: #1e293b;
+        color: #38bdf8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-family: "Press Start 2P", sans-serif;
+        font-size: 12px;
+        animation: floatAnim 6s ease-in-out infinite alternate;
+        pointer-events: auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+        text-shadow: 0 0 5px #38bdf8; 
+      }
+
+      .floating-block:hover {
+        transform: scale(1.2) rotate(2deg);
+        box-shadow: 0 0 5px #38bdf8;
+        color: #ffffff;
+      }
+
+      .floating-block::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 130%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #1e293b;
+        color: #38bdf8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 10px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        
+      }
+
+      .floating-block:hover::after { opacity: 1; }
+
+      @keyframes floatAnim {
+        0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+        50% { transform: translateY(-10px) rotate(3deg); opacity: 1; }
+        100% { transform: translateY(0) rotate(-3deg); opacity: 0.8; }
+      }
+
+
+      
+
+
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+
+        }
+        nav a {
+          padding: 8px 0;
+        }
+        .card {
+          padding: 10px;
+        
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        body {
+          font-size: 16px;
+          line-height: 1.6;
+        }
+      }
+
+      /* DARK MODE */
+      
+
+
+      body.dark-mode .floating-block {
+        background: #2760A1;
+        color: #A3CFFF;
+        text-shadow: 0 0 5px #A3CFFF;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      body.dark-mode summary {
+        color: #A3CFFF;
+      }
+
+      
+
+      body.dark-mode .card { background: #003C8C; color: #1B3A70; }
+      body.dark-mode header { background: #1B3A70; }
+      body.dark-mode nav { background: #1A2B4C; }
+      body.dark-mode a { color: #A3CFFF; }
+      body.dark-mode p, body.dark-mode li { color: #8BB5F0; }
+      body.dark-mode .card h3 { color: #A3CFFF; }
+      body, header, nav, .card, .floating-block, a { transition: all 0.3s ease; }
+
+
+      /* IMAGES */
+      .responsive-img { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 10px; }
+      .image-caption { text-align: center; margin: 20px auto; }
+      .image-caption figcaption { font-size: 0.9em; color: #38bdf8; margin-top: 5px; }
+      /* Light Mode */
+      body.light-mode {
+        background: #f9fafb;
+        color: #111827;
+      }
+
+      body.light-mode .card {
+        background: #ffffff;
+        color: #1f2937;
+      }
+
+      body.light-mode a,
+      body.light-mode button {
+        color: #38bdf8;
+      }
+
+      /* Dark Mode */
+      body.dark-mode {
+        background: #0B1B3A;
+        color: #E0F0FF;
+      }
+
+      body.dark-mode .card {
+        background: #1B2B4A;
+        color: #DDEEFF;
+      }
+
+      body.dark-mode a,
+      body.dark-mode button {
+        color: #63C5FF;
+      }
+
+      body.dark-mode .card,
+      body.dark-mode .container {
+        border-color: #2A3B5A;
+      }
+      /* START HERE CTA */
+      .start-cta {
+        background: linear-gradient(135deg, #020617, #1e293b);
+        border-bottom: 2px solid #38bdf8;
+        padding: 30px 20px;
+      }
+
+      .start-cta-inner {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .start-cta h2 {
+        color: #38bdf8;
+        margin-bottom: 10px;
+      }
+
+      .start-cta p {
+        color: #e5e7eb;
+        max-width: 700px;
+        margin: 0 auto 20px auto;
+        line-height: 1.6;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .cta-buttons a {
+        padding: 12px 18px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cta-primary {
+        background: #38bdf8;
+        color: #020617;
+      }
+
+      .cta-secondary {
+        background: transparent;
+        color: #38bdf8;
+        border: 2px solid #38bdf8;
+      }
+
+      .cta-buttons a:hover {
+        transform: scale(1.08);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      }
+
+      /* Dark mode compatibility */
+      body.dark-mode .start-cta {
+        background: linear-gradient(135deg, #0B1B3A, #1B2B4A);
+      }
+
+      /* GLITCH CURSOR ELEMENT */
+      /* PIXEL CURSOR TRAIL */
+      .pixel {
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        background: #38bdf8;
+        pointer-events: none;
+        z-index: 9999;
+        animation: pixelFade 0.6s forwards;
+      }
+
+      @keyframes pixelFade {
+        from {
+          opacity: 1;
+          transform: scale(1);
+        }
+        to {
+          opacity: 0;
+          transform: scale(0.3);
+        }
+      }
+
+      /* Disable on touch devices */
+      @media (hover: none) {
+        .pixel {
+          display: none;
+        }
+      }
+      /* PIXEL BURST */
+      .pixel-burst {
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        background: #38bdf8;
+        pointer-events: none;
+        z-index: 9999;
+      }
+      @media (hover: none) {
+        .pixel-burst {
+          display: none;
+        }
+      }
+      
+
+      .section-divider {
+        border: none;
+        border-top: 2px dashed #38bdf8;
+        margin: 50px 0;
+        opacity: 0.4;
+      }
+
+      .club-status {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-weight: bold;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+        background: #1e293b;
+        color: #38bdf8;
+        border: 2px solid #38bdf8;
+        transition: all 0.3s ease;
+      }
+
+      /* Live */
+      .club-status.live {
+        background: #16a34a;
+        color: #022c22;
+        border-color: #22c55e;
+        box-shadow: 0 0 10px rgba(34,197,94,0.6);
+        animation: pulseGlow 1.5s infinite alternate;
+      }
+
+      /* Today */
+      .club-status.today {
+        background: #facc15;
+        color: #422006;
+        border-color: #fde047;
+      }
+
+      /* Upcoming */
+      .club-status.upcoming {
+        background: #1e40af;
+        color: #dbeafe;
+        border-color: #3b82f6;
+      }
+
+      @keyframes pulseGlow {
+        from { box-shadow: 0 0 5px rgba(34,197,94,0.4); }
+        to { box-shadow: 0 0 15px rgba(34,197,94,0.9); }
+      }
+
+      .code-block {
+        position: relative;
+        background: linear-gradient(135deg, #020617, #0f172a);
+        padding: 14px;
+        border-radius: 10px;
+        overflow-x: auto;
+        border: 1px solid #38bdf8;
+        box-shadow: 0 0 10px rgba(56,189,248,0.2);
+      }
+    
+      .copy-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: #38bdf8;
+        color: #020617;
+        border: none;
+        padding: 6px 10px;
+        font-size: 0.7rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 0.2s, background 0.2s;
+      }
+
+      .copy-btn:hover {
+        background: #0ea5e9;
+        transform: scale(1.05);
+      }
+
+      .copy-btn.copied {
+        background: #22c55e;
+        color: #022c22;
+      }
+
+      pre {
+        margin: 0;
+      }
+      .code-block code {
+        display: block;
+        white-space: pre;
+      }
+      .code-block.dark-mode {
+        position: relative;
+        background: #f1f5f9;              /* soft gray */
+        color: #0f172a;
+        padding: 12px;
+        border-radius: 8px;
+        overflow-x: auto;
+        border: 1px solid #e2e8f0;
+      }
+
+      .code-block.dark-mode .code {
+        display: block;
+        white-space: pre;
+        font-family: monospace;
+        font-size: 0.9rem;
+      }
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #020617;
+        color: #38bdf8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Press Start 2P", sans-serif;
+        z-index: 99999;
+        transition: opacity 0.5s ease;
+      }
+
+      #loader.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #loader p {
+        margin-top: 20px;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%, 50%, 100% { opacity: 1; }
+        25%, 75% { opacity: 0.3; }
+      }
+      .quiz {
+        margin-top: 15px;
+      }
+
+      .quiz-option {
+        display: block;
+        margin: 5px 0;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #38bdf8;
+        background: transparent;
+        color: #e5e7eb;
+        cursor: pointer;
+      }
+
+      .quiz-option:hover {
+        background: rgba(56,189,248,0.2);
+      }
+
+      .quiz-feedback {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .lesson-block {
+        margin-top: 10px;
+      }
+
+      .lesson-block summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #38bdf8;
+        margin-bottom: 10px;
+        list-style: none;
+      }
+
+      .lesson-block summary::before {
+        content: "▶ ";
+      }
+
+      .lesson-block[open] summary::before {
+        content: "▼ ";
+      }
+      .club-status.summer {
+        background: #f59e0b;
+        color: #422006;
+        border-color: #fbbf24;
+      }
+    </style>
+
+
+    
+
+  </head>
+
+  <body>
+    <a id="top"></a>
+    <!-- HEADER -->
+    <header>
+     
+
+      <h1>SITCC</h1>
+      <h5>(St. Ignatius Tigers Coding Club)</h5>
+      <p>Building games. Learning code. Having fun.</p>
+      
+      <!-- Floating code blocks -->
+      <div class="floating-block" style="top: 40px; left: 12%;" data-tooltip="Declares a variable 'x' with value 10." aria-label="Declares a variable 'x' with value 10.">⛓️ var x = 10;</div>
+      <div class="floating-block" style="top: 100px; right: 15%;" data-tooltip="Checks if the score is greater than 5." aria-label="Conditional statement: checks if the score is greater than 5">⬛ if(score>5){}</div>
+      <div class="floating-block" style="bottom: 10px; left: 10%;" data-tooltip="Moves the player." aria-label="Moves the player">💾 player.move()</div>
+      <div class="floating-block" style="bottom: 15px; right: 10%;" data-tooltip="Loops forever." aria-label = "Infinite loop: while true">🎮 while(true){}</div>
+      <div class="floating-block" style="top: 20px; left: 40%;" data-tooltip="For loop 0 to 4." aria-label="For loop from 0 to 4">🔁 for(i=0;i<5;i++)</div>
+      <div class="floating-block" style="top: 40px; right: 10%;" data-tooltip="Creates a new sprite (character)." aria-label="Creates a new sprite">📦 sprites.create()</div>
+      <div class="floating-block" style="bottom: 70px; left: 7%;" data-tooltip="Shows text 'Hello' on screen." aria-label="Displays text 'Hello' on the screen">💡showText("Hello")</div>
+
+      <button id="toggle-theme" style="margin-top:10px; padding:5px 10px; font-family:'Press Start 2P', sans-serif;" aria-label="Toggle dark or light mode" title="Toggle dark/light mode">Toggle Dark/Light Mode</button>
+      <br>
+      <div id="club-status" class="club-status">
+        Checking status...
+      </div>
+
+    </header>
+    
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Main Navigation">
+      <a href="#about" aria-label="Go to About section">About</a>
+      <a href="#join" aria-label="Go to Join section">Join</a>
+      <a href="#games" aria-label="Go to Game section">Games</a>
+      <a href="#schedule" aria-label="Go to Schedule section">Schedule</a>
+      <a href="#achievements" aria-label="Go to Achievements section">Achievements</a>
+      <a href="#community" aria-label="Go to Community section">Community</a>
+      <a href="#contact" aria-label="Go to Contact section">Contact</a>
+      <a href="#leadership" aria-label="Go to Leadership section">Leadership</a>
+    </nav>
+
+
+      <!-- START HERE CTA -->
+      <section id="start-here" class="start-cta" aria-label="Start here section for new visitors">
+        <div class="start-cta-inner">
+          <h2>New to SITCC? Start Here</h2>
+          <p>
+            Everyone starts somewhere — and games make learning fun. Whether you've never coded or love creating and exploring ideas,
+            this is the website suited for you.
+            Learn what we do, how to join, and what to expect at your first meeting.
+          </p>
+          <p>Fridays • Tech Room • During lunch</p>
+          <div class="cta-buttons">
+            <a href="#join" class="cta-primary">How to Join</a>
+            <a href="#about" class="cta-secondary">What We Do</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="card">
+          <h2>Why Join SITCC?</h2>
+          <ul>
+            <li>🎮 Make real games</li>
+            <li>🏆 Compete in Code Clash</li>
+            <li>🤝 Learn with friends</li>
+            <li>🚀 No experience needed</li>
+          </ul>
+        </div>
+        <hr class="section-divider">
+        <h2>Why We Created This Club</h2>
+        <div class="card">
+          <p>
+            We started the St. Ignatius Tigers Coding Club to help students learn how
+            to code using <strong>MakeCode Arcade</strong>. Our goal is to give students
+            a fun space to build games, explore creativity, and bring ideas to life.
+          </p>
+          <a href="https://arcade.makecode.com/" target="_blank">
+            Link to <strong>Makecode Arcade</strong>
+          </a>
+          <br>
+          <p><strong>Website built by students of SITCC</strong></p>
+        </div>
+        
+
+        
+        <h2>What You’ll Learn</h2>
+        <div class="card">
+          <ul>
+            <li>Game design & mechanics</li>
+            <li>Problem solving & logic</li>
+            <li>Team collaboration</li>
+            <li>Block-based coding (text coding later!)</li>
+          </ul>
+          <a href="https://docs.google.com/document/d/1ucVU8KkrO3s1PMVocT2Ia6Y3y9QmfPORjx4OKzW3vCI/edit?tab=t.0" target="_blank">
+            Learn more on coding here!
+          </a>
+
+        </div>
+
+        <div class="card">
+          <h3>Moving Into JavaScript</h3>
+          <p>Though we do not teach JavaScript yet (But will be), members can explore JavaScript after learning the basics of block-based coding. A real-world programming language used 
+            to built games, websites, and interactive features.</p>
+            <a href="https://docs.google.com/presentation/d/1vCCiroo6nCOcu1rkJw50vYyp2u6dEj8AJJ8wg63j_24/edit?slide=id.p1#slide=id.p1" target="_blank">
+              Learn more on JavaScript here!
+            </a>
+            <ul>
+              <li>Variables, loops, and conditionals</li>
+              <li>Game logic and player movement</li>
+              <li>Making buttons, effects, and interactions</li>
+            </ul>
+          <h3>Advanced JavaScript Syntax</h3>
+          <ul>
+            <li>Enums, Classes, Switches</li>
+            <li>OOP, Union Types, Arrow Functions</li>
+            <li>Tenary Operators,  Advanced Arrays</li>
+            <li>Bitwise Operators, Generics, Higher-Order Functions</li>
+            <li>Runtime Introspection, Performance, Events + Closures</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Our club values</h3>
+          <ul>
+            <li><strong>Creativity:</strong> We encourage original ideas and experimentation.</li>
+            <li><strong>Respect:</strong> Everyone is welcomed and supported.</li>
+            <li><strong>Collaboration:</strong> We learn better by helping each other.</li>
+            <li><strong>Growth:</strong> Mistakes are part of learning and help us learn.</li>
+            <li><strong>Fun:</strong> Coding should be exciting and rewarding.</li>
+          </ul>
+        </div>
+      
+            
+      </section>
+
+      
+      
+
+      <section id="contact">
+        <h2>Contact & Parent Information</h2>
+        <div class="card">
+          <p>The St.Ignatius Tigers Coding Club is a student-led program meant to introduce coding for children (of all ages) in a fun, creative, and supportive environment.
+          We use<strong> MakeCode Arcade</strong>, a fun and engaging way to learn the basics of programming by making their own games.</p>
+
+          <p>Coding, as you might see, can help children develop many skills such as thinking logically, being able to problem solve, using their creativity, using teamwork
+          to their advantage, and having perseverance.</p>
+
+          <p>No coding skill is required - beginners are always welcomed. The only requirement is that you have to be in 3rd-8th at least.</p>
+
+          <p>We emphasize collaboration, teamwork, encouragement, and learning at each student's pace. Members help each other when someone has a question, explore ideas,
+          and gain confidence using technology in a positive way.</p><p> Parents are encouraged to support their child by asking questions on what they're creating, 
+          celebrating their progress, and helping them stay curious. If you have any questions or would like to reach out to us, please contact:</p>
+          
+          <p>
+          For questions or concerns, please use the contact form below.
+          Messages are reviewed by SITCC leaders and the faculty advisor.
+          </p>
+
+          <p>
+          We use <strong>school-approved accounts only.</strong> We do not use personal Gmail accounts.
+          </p>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSffNfoTpYsgGitRGtUlpIaj7srUmQW55jNKOFR3DT7AegC-XQ/viewform?usp=dialog" target="_blank">Contact: Please click here to contact us so that we can answer your concerns.</a>
+          <br>
+          <p>
+          After submitting the form, please allow time for a response.
+          Messages are reviewed during school hours.
+          </p>
+
+          <p>Messages are only visible by the SITCC leaders and advisors.</p>
+
+          
+
+          <p>
+          If a response is needed, we will reply using school tools
+          (Google Docs comments, shared documents, Gmail for parents, or in-person communication).
+          </p>
+
+
+        </div>
+        
+      
+      </section>
+
+      <!-- SCHEDULE -->
+      <section id="schedule">
+        <h2>Schedule</h2>
+        <div class="card">
+          <p>
+            Coding Club meets every Friday (except half days).
+            Each month, we work on a new game and host a school-wide tournament.
+            <br>
+            If you have any questions, please talk to Cruz Le or go to the contact section and fill out a form there.
+          </p>
+        </div>
+        <hr class="section-divider">
+
+
+          
+        <h2>📰Club News & Updates</h2>
+        
+        <p>This is where all your news, tips, events, and more will be.</p>
+        <h3>May Coding Club Recap</h3>
+          
+        
+        
+
+        <div class="card">
+          <h3>Thank You!</h3>
+          <p><em>Posted on May 28, 2026</em></p>
+          <p>Thank you for everybody who came to our last coding club day of this school year.
+            I'm so grateful for all the laughter, memories, and ideas we shared together. Thank you for anyone who's came, even just for a day or for a Code Clash. Thank you.
+            For all this support, I'm so grateful to run such an amazing club and help fellow students learn. Thank you Mr.C, for making this possible and helping us learn and grow 
+            everyday through this club. I'm thankful for the lessons you've given us in our life and school year. Thank you officers for all you've done and supporting me and helping me 
+            even on the hardest days where nothing seemed to make sense, thank you for being there for me. And so, with this school year wrapping up, I hope everyone has a great summer, 
+            a great life, and for the 8th graders who graduated, may you lead the way in your light for others.
+            -Your Amazing Coder: Cruz Le 
+          </p>
+        </div>
+
+        
+        
+        <h3>Code Tutorials</h3>
+        <hr class="section-divider">
+
+        <div class="card">
+          <h3>Mini Tutorial: If Statements</h3>
+          <p><em>Posted on January 14, 2026</em></p>
+          <p><strong>What is an If Statement?</strong></p>
+          <p>An if statement lets your program make a choice. It runs code only if a condition is true. You can also use <strong>else</strong> to run code when the condition is false.</p>
+          <p>Syntax:</p>
+          <details class="lesson-block">
+            <summary>▶ Show Code</summary>
+
+            <div class="code-block" data-lang="JavaScript">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">
+              if (info.score() > 10) {
+                game.splash("You won!");
+              }
+              </code></pre>
+            </div>
+
+          </details>
+          <div class="quiz">
+            <p><strong>Quick Check:</strong> When does this code run?</p>
+
+            <button class="quiz-option" data-correct="true">
+              When score is greater than 10
+            </button>
+
+            <button class="quiz-option">
+              When score is less than 10
+            </button>
+
+            <button class="quiz-option">
+              Always
+            </button>
+
+            <p class="quiz-feedback"></p>
+          </div>
+          <p>Example: Check if a player has enough points to win.</p>
+          
+          <br>
+
+          <p>You can also use <strong>else if</strong> to enhance your condition further!</p>
+          <p>Syntax:</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">
+                if (health >= 100) {
+                  console.log("Full health!");
+                } else if (health <= 20) {
+                  console.log("Almost dead!");
+                } else if (health <= 50) {
+                  console.log("Not doing so well!");
+                } else {
+                  console.log("Player is dead!");
+                }
+              </code></pre>
+            </div>
+          </details>
+        </div>
+        <div class="card">
+          <h3>Mini Tutorial: Variables</h3>
+          <p><em>Posted on December 14, 2025</em></p>
+          <p><strong>What is a Variable?</strong></p>
+          <p>A variable is a container for storing data that your program can use and change. Examples of variable types: numbers, text, boolean (true/false).</p>
+          <p>Example:</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">let <var>age</var> = 20;</code></pre>
+              <pre><code class="language-js">const <var>magic</var> = 50;</code></pre>
+            </div>
+          </details>
+        </div>
+        <br>
+        <div class="card">
+          <h3>Mini Tutorial: Loops</h3>
+          <p><em>Posted on January 14, 2026</em></p>
+          <p><strong>For Loop Example:</strong> Repeat something a certain number of times.</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">
+              for (let <var>i</var> = 0; <var>i</var> &lt; 5; <var>i</var>++) {
+                  console.log("Step " + <var>i</var>);
+              }</code></pre>
+            </div>
+          </details>
+        </div>
+        <div class="card">
+          <h3>Mini Tutorial: Enums</h3>
+          <p><em>Posted on February 2, 2026</em></p>
+          <p><em>Language: JavaScript</em></p>
+          
+          <p>An enum (short for enumeration) is a way to give names to a fixed set of values.
+            Instead of remembering numbers like 0, 1, 2, you use meaningful names.
+          </p>
+          <p><strong>Why Enums Are Useful (Game Example)</strong></p>
+
+          <p>Imagine a game where a player can be in different states:
+
+          Idle,
+
+          Running,
+
+          Jumping,
+
+          Game Over.
+
+          Without enums, you might do this</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">
+                <var>let playerState = 1; // what does 1 mean?</var>
+              </code></pre>
+            </div>
+          </details>
+          <p>These are called <strong>Magic Numbers</strong> and we don't like them!</p>
+          <br>
+          <p><strong>Using an Enum</strong></p>
+          <p>You can make an enum by typing the key word <strong>enum</strong> and then the name of the enum</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+                <pre><code class="language-js">
+                  enum PlayerState {
+                    IDLE = 0, // shows what is the value of the index as enums are also numbers 
+                    RUNNING =  1,
+                    JUMPING =  2,
+                    GAME_OVER =  3
+                  }
+
+                  //Another Example:
+                  enum GameState {
+                    Main_Menu,
+                    Playing,
+                    Paused,
+                    GAME_OVER
+                  }
+                </code></pre>
+            </div>
+          </details>
+          <p>Now use it like this</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">let playerState = PlayerState.IDLE;</code></pre>
+            </div>
+          </details>
+          <h3>Using Enums with If Statements</h3>
+          <p>You can even use enums in if statements!</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">
+                if (playerState == PlayerState.JUMPING) {
+                  console.log("Player is jumping!");
+                }
+              </code></pre>
+            </div>
+          </details>
+          <h3>Changing States</h3>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">playerState = PlayerState.RUNNING;</code></pre>
+            </div>
+          </details>
+          <p>Later changed to:</p>
+          <details class="lesson-block" data-lang="JavaScript">
+            <summary>▶ Show Code</summary>
+            <div class="code-block">
+              <button class="copy-btn">Copy</button>
+              <pre><code class="language-js">playerState = PlayerState.GAME_OVER;</code></pre>
+            </div>
+          </details>
+          
+        </div>
+        <br>
+        
+        <h3>Tips on Coding</h3>
+        <div class="card">
+          
+          <p><em>Posted on December 14, 2025</em></p>
+          <p><strong>Tip</strong>: While coding can be a very fun and satisfying experience, it's good to regularly take breaks to reflect on what you learned or
+          how  you can fix a bug (error). After maybe about 20mins hop back to it and try again. Good breaks = faster learning.</p>
+          <footer> Cruz Le</footer>
+        </div>
+        <div class="card">
+          <h3>Mini Tutorial: Debugging Errors</h3>
+          <p><em>Posted on January 14, 2026</em></p>
+          <p><strong>What is Debugging?</strong></p>
+          <p>Debugging is the process of finding and fixing errors (bugs) in your code. It helps your program work correctly and prevents unexpected behavior.</p>
+
+          <p><strong>Steps to Debug:</strong></p>
+          <ul>
+            <li><strong>Read Error Messages:</strong> Look at what the console or program tells you. It often tells you the line number and type of error.</li>
+            <li><strong>Check Syntax:</strong> Missing semicolons, brackets, or parentheses are common errors.</li>
+            <li><strong>Use Console Logs:</strong> Add <code class="language-js">console.log()</code> to check variable values or the flow of your program.</li>
+            <li><strong>Break Down Code:</strong> Test smaller pieces of your code separately to isolate the problem.</li>
+            <li><strong>Ask Questions:</strong> Sometimes explaining the problem aloud helps you see mistakes.</li>
+          </ul>
+
+          <p><strong>Example:</strong></p>
+          <div class="code-block">
+            <button class="copy-btn">Copy</button>
+            <pre><code class="language-js">let score = 10;
+
+            // Suppose this is giving an unexpected result
+            if (score = 5) {  // Error: used = instead of ==
+                console.log("Score is 5!");
+            }
+
+            // Fix:
+            if (score == 5) {  // Correct: use == for comparison
+                console.log("Score is 5!");
+            }
+
+            // Add console logs to debug
+            console.log("Current score:" + score);
+            </code></pre>
+          </div>
+
+            
+            <footer>Cruz Le</footer>
+        </div>
+
+        
+        <div class="card">
+          <h3>Test Small, Debug Big</h3>
+          <p><em>Posted on January 14, 2026</em></p>
+          <p><strong>Tip:</strong> When writing code, test small parts at a time. If something breaks, it’s easier to find the problem and fix it. This keeps your code from becoming a big confusing mess!</p>
+          <footer> Cruz Le</footer>
+        </div>
+        
+      </section>
+      
+
+
+      <!--Achievements -->
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="card">
+          <p>These sections are all about the club achievements on what we have reached,
+            and about the students' and members' achievements.</p>
+          <h2>Club Achievements</h2>
+          <p>Achievements</p>
+
+          <ul>
+            <li>The club has reached 15 active people who come every Friday.</li>
+            <li>Club Milestone: Have been active since October.</li>
+            <li>Tag Tournament: Had our first tournament in January.</li>
+            <li>Population Growth: Club has reached a whole class of students!</li>
+          </ul>
+        </div>
+        
+      </section>
+
+      <section id="community">
+        <h2>Community</h2>
+        <p>This section is about the people and members of this club.</p>
+
+        <!-- MEMBER SPOTLIGHT -->
+        
+        <h2>⭐ Member Spotlight</h2>
+        <div class="card"> 
+          <p><strong>Member of the Month:</strong> Niko Vathis</p>
+          <p>For working hard on becoming a better coder while still being new to the crew.</p>
+        </div>
+        <!-- NOTE -->
+      
+        <h2>Note from Members</h2>
+        <div class="card">
+          <p>Here is a little note from our members on why they decided to join the club and what inspired them to start coding.</p>
+          <ul>
+            <li><strong>Cruz Le</strong> - I wanted a club that lets kids' creativity run wild and helps others learn to code. Owen Taylor loved the idea and we started working together.</li>
+            <li><strong>Owen Taylor</strong> - </li>
+          </ul>
+          <h2>Quote from members</h2>
+          <blockquote>
+            “Every bug is just a puzzle...waiting to be solved.”
+            <footer>- Cruz Le, President</footer>
+          </blockquote>
+          <blockquote>
+            “Games seem impossible — until they’re done.”
+            <footer>- Nick Broderick, Advisor</footer>
+          </blockquote>
+        </div>
+      
+      
+      </section>
+
+      <!-- GAMES -->
+      <section id="games">
+        <!-- Later on add game jam winner games and members' game with picture -->
+        <div class="card">
+          <h3><strong>Accepting Any Game</strong></h3>
+          <p>
+            From now until the last coding club day, we will be accepting games of any sort to have a chance to 
+            be played at the end of the year. On that day, we'll play the games we've gotten and show what students 
+            and members have made. Come submit your game and join the fun as you get to show what you've accomplished.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfj0R1WfmehScmtkvxt0jAcvO20VMFjrQ-Kb3O_hGTcFvuNRg/viewform?usp=publish-editor" target="_blank" aria-label = "Submit your amazing game using the google form">Click here to submit your awesome game!</a>
+        </div>
+        <h2>Games</h2>
+
+        <div class="card">
+          <h2>Makecode Arcade games</h2>
+          
+          <p>Warning!!! These games are not made by us and are purely put here to show some games that people have made</p>
+          <hr class="section-divider">
+
+          <h3>Crate Dungeon</h3>
+          <iframe src="https://arcade.makecode.com/S73787-22991-14839-61755" width="480" height="360" title="Crate Dungeon Arcade game"></iframe>
+          <a href="https://arcade.makecode.com/S73787-22991-14839-61755" target="_blank" aria-label="Play Crate Dungeon in full screen.">▶ Play Fullscreen</a>
+          <footer> A game about thinking logically and creatively.</footer>
+        </div>
+        <div class="card">
+          <h3>Sophie's Castle Adventure</h3>
+          <iframe src="https://arcade.makecode.com/S10950-75095-11864-24486" width="480" height="360" title="Sophie's Castle Adventure Arcade game"></iframe>
+          <a href="https://arcade.makecode.com/S10950-75095-11864-24486" target="_blank" aria-label="Play Sophie's Castle Adventure in full screen.">▶ Play Fullscreen</a>
+          <footer>Battle waves of enemies while getting special upgrades that help you earn more exp.</footer>
+        </div>
+        <div class="card">
+          <h3>Delivermania</h3>
+          <iframe src="https://arcade.makecode.com/S06248-36640-57793-15826" width="480" height="360" title="Delivermania Arcade game"></iframe>
+          <a href="https://arcade.makecode.com/S06248-36640-57793-15826" target="_blank" aria-label="Play Delivermania in full screen." >▶ Play Fullscreen</a>
+          <footer>Deliver food to your customers in a fast-paced way. Don't throw your orders away and don't mess your timing up!</footer>
+        </div>
+
+        <h2>Club Games</h2>
+        <p>These games have been made by the SITCC members and students in the club.</p>
+        <hr class="section-divider">
+        <div class="card">
+          <h3>Something Will Happen Every 10 Seconds</h3>
+          <iframe src="https://arcade.makecode.com/S34301-78426-59006-23668" width="480" height="360" title="Something Will Happen Every 10 Seconds Arcade game"></iframe>
+          <a href="https://arcade.makecode.com/S34301-78426-59006-23668" target="_blank" aria-label="Play Something Will Happen Every 10 Seconds in full screen.">▶ Play Fullscreen</a>
+          <footer>RNG based game on trying to survive all while just trying to get 100+ score.</footer>
+        </div>
+
+        <div class="card">
+          <h3>Platformer Worlds</h3>
+          <iframe src="https://arcade.makecode.com/S22289-99944-82431-45675" width="550" height="450" title="Platformer Worlds Arcade game"></iframe>
+          <a href="https://arcade.makecode.com/S22289-99944-82431-45675" target="_blank" aria-label="Play Platformer Worlds in full screen.">▶ Play Fullscreen</a>
+          <footer>Classic platformer games with great mechanics and many levels. Made by James de la Vega in 5th grade.</footer>
+        </div>
+
+        
+
+        <div class="card">
+          <h2>Anything the game could be improved on?</h2>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYi8ydxwc81nmyG4s911oMRUe9cMEkKY4gOC85i0itWiQ7LA/viewform?usp=publish-editor" target="_blank" aria-label="Give feedback on a game using Google Form">
+            📝Give Feedback
+          </a>
+        </div>
+        <hr class="section-divider">
+
+        <div class="card">
+          
+          <h3>How To Share Your Game:</h3>
+          <p>You can share your game with other people by opening up your game on <strong>Makecode Arcade</strong>
+          and click the three connected dots near the top right corner of the web page. Then pressing
+          <strong>Share Game</strong> and copying the link (optionally, you can share your game with embed code, on Facebook, on Twitter, on Google Classroom, and much more!).</p>
+          <br>
+          <h3>Hosting a Game/Joning a Game</h3>
+          <p><strong>Hosting a game:</strong>To host a game (if you're the hoster), click the <strong>Host multiplayer game</strong> button underneath the gameboy/your game.
+          Then clicking the <strong>Host button</strong> and <strong>Share and Host</strong>.  Now, tell your friends to enter the link near the code (Example: D45B4E).
+          Now wait for your friends to join and start playing (NOTE: gameplay might be different on other devices).
+          Optionally, you can also host pre-made games by going to the link near the code: <a href="https://arcade.makecode.com/--multiplayer" target="_blank" aria-label="Host/Join a multiplayer link using the specified link.">Join a game here!</a></p>
+
+          <br>
+          <h3>How To Join a Game</h3>
+          <p>To join a game, go the specified link the hoster is telling you, or if on mobile, scan the QR code. Once you have gotten to the link,
+            enter the code near the QR code and press <strong>Enter</strong>. Now wait for the host to start the game and have some fun!</p>
+        </div>
+
+
+
+
+        <br>
+
+
+        <h2>Multiplayer Games</h2>
+  
+        <p>Play these multiplayer games with friends and family!</p>
+        <hr class="section-divider">
+        <div class="card">
+          <iframe src="https://arcade.makecode.com/S39041-20414-71264-58614"  title="Multiplayer 1988 Formula 1 World Championship"></iframe>
+          <a href="https://arcade.makecode.com/S39041-20414-71264-58614" target="_blank" aria-label="Play Multiplayer 1988 Formula 1 World Championship in full screen.">▶ Play Fullscreen</a>
+          <footer>Formula 1 Racing game that can be played with a friend. Made by <strong>James de la Vega</strong> in 5th grade</footer>
+        </div>
+
+        <div class="card">
+          <iframe src="https://arcade.makecode.com/S71494-32592-60611-93116" title="Capture The Flag"></iframe>
+          <a href="https://arcade.makecode.com/S71494-32592-60611-93116" target="_blank" aria-label="Play Capture The Flag in full screen.">▶ Play Fullscreen</a>
+          <footer>Capture other's flag in order to score more points and win. Make by <strong>Cruz Le</strong> in 5th grade</footer>
+        </div>
+
+        <div class="card">
+          <iframe src="https://arcade.makecode.com/S59987-02755-83319-73208" title="King of the Crown"></iframe>
+          <a href="https://arcade.makecode.com/S59987-02755-83319-73208" target="_blank" aria-label="Play King of The Crown in full screen">▶ Play Fullscreen</a>
+          <footer>Keep hold of the crown, throw your boomerang, and gain powerups to become the ultimate king. Made by <strong>Cruz Le</strong> in 5th grade</footer>
+        </div>
+
+        <div class="card">
+          <iframe src="https://arcade.makecode.com/S59131-43707-50969-40952" title="Tag"></iframe>
+          <a href="https://arcade.makecode.com/S59131-43707-50969-40952" target="_blank" aria-label="Play Tag in full screen">▶ Play Fullscreen</a>
+          <footer>Run away from the tagger in hopes that you survive and win. This was the first tournament game ever. Made by <strong>Cruz Le</strong> in 5th grade</footer>
+        </div>
+        
+        <div class="card">
+          <iframe src="https://arcade.makecode.com/S94849-09159-45115-74404" title="Brick Hopper"></iframe>
+          <a href="https://arcade.makecode.com/S94849-09159-45115-74404" target="_blank" aria-label="Play Brick Hopper in full screen">▶ Play Fullscreen</a>
+          <footer>Go aganist your friend/opponent in this obstacle platformer game. Jump, jump, jump all the way to the top to win! Made by <strong>Deirdre Karbousky</strong> in 5th grade</footer>
+        </div>
+
+        <!-- Club Jam -->
+        <h2>🏆 Club Jam Winner of the Month</h2>
+        <div class="card">
+          <p><strong>Winner:</strong> TBD</p>
+          <p>Each month, members compete in a club jam based on a theme. Winners earn prizes and bragging rights.</p>
+        </div>
+        <!--Games:
+          One-Button Game
+
+          Auto-Runner
+
+          Gravity Flip
+
+          30-Second Game
+
+          Only 3 Variables
+
+          Story Game
+
+          Speed Increases Forever
+
+          Remix a Friend’s Game
+
+          Fix-the-Bug
+
+          Impossible Game -->
+        <div class="card">
+          <h2>Code Clash </h2>
+          <p>Monthly All-School Coding Tournament</p>
+          <p>Grades 3–8 • Brackets • Games • Prizes</p>
+          <p>Join the battle. Prove your skills.</p>
+          <br>
+          <p>Every month, our school will host an all-school coding tournament where students in grades 3–8 compete in a series of fun and challenging games.
+
+            On each class’s technology days, students will battle it out in bracket-style matches until only a few champions remain. Those champions will then face off against winners from other classes in the tech room at the end of the week.
+
+            The tournament is played in bracket format, and 1st, 2nd, and 3rd place winners of the entire competition will earn awesome prizes.
+
+            Think you have what it takes?
+            Step up, code hard, and join the Code Clash!
+          </p>
+        </div>
+        <div class="card">
+          <h2>Hall of Fame</h2>
+          <p>This is where all the Club Jam winners or Code Clash Winners  will be placed.</p>
+          <ul>
+            <li>January 2026: <strong>Alex Romo</strong>: Tag Champ</li>
+            <li>February 2026: <strong>Niko Vathis</strong>: Obstacle Master</li>
+          </ul>
+        </div>
+        <div class="card">
+          
+          <h2>Monthly Challenge</h2>
+          <p>This month's monthly game challenge is: <strong>Every 10 seconds something changes</strong></p>
+          <p>Rules:</p>
+          <ul>
+            <li>Something should happen every 10 seconds and it should affect the game in a way not just change a number.</li>
+            <li>Creativity Matters!</li>
+            <li>This is an individual project not a team project.</li>
+            <li>Must put on a text block who it was made by</li>
+            <li>Please submit it to us and we will choose a winner at the end of each month</li>
+          </ul>
+          <p><strong>Deadline</strong>: Until the last Friday of January</p>
+          <iframe src="https://arcade.makecode.com/S34301-78426-59006-23668" title="Demo Arcade game"></iframe>
+          <a href="https://arcade.makecode.com/S34301-78426-59006-23668" target="_blank" aria-label="Play a monthly challenge demo game in full screen.">▶ Play Fullscreen</a>
+          <figcaption> A demo version of what a game should have</figcaption>
+        </div>
+        <div class="card"> 
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUniwWQJ1v3cIfiokpZbInTbGBkAj8AZZR_XJhGmjiVw0uVA/viewform?usp=header" target="_blank" aria-label="Submit your game using Google Form">
+          Click here to submit your game!</a><br>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSegSOgp-5YscwbJGJbLLyJ67ZPjAaREOaQZm8IjBVjjyoHGoQ/viewform?usp=publish-editor" target="_blank" aria-label="Vote for the best game of the month using Google Form">
+          Click here to vote for which game do you think was the best!</a>
+        </div>
+        <br>
+        <!-- PROJECTS -->
+        <!-- Add before and after images of games, and maybe some game play of it too! -->
+        <h2>What We’ve Been Working On</h2>
+        <div class="card">
+          <ul>
+            <li>October–November: Learning MakeCode Arcade</li>
+            <li>December: Developing the game <strong>Tag</strong></li>
+            <li>January: Finishing Tag and getting ready for the tournament</li>
+            <li>February: Finished club t-shirts and introduced fun challenges</li>
+          </ul>
+          <h2>The Club's members' newest Game</h2>
+          <figure class="image-caption">
+            <img loading=lazy src="https://i.postimg.cc/WbTG1Xjv/Screenshot-2025-12-13-180305.png" alt="Latest game screenshot" class="responsive-img">
+              <figcaption>Our Coding Club members' latest project: Verdant Veil</figcaption>
+
+              <div style="position:relative; width:100%; height:0px; padding-bottom:74.760%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://image2url.com/videos/1765931064487-11024076-e320-44ee-82d4-4a8fc249b759.mp4" width="80%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+            <figcaption>Video From Verdant Veil</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      
+      
+        
+
+        
+      
+
+        
+          
+      
+
+
+      <!-- JOIN -->
+      <section id="join">
+        <h2>How to Join</h2>
+
+        <div class="card">
+          <ul>
+            <li>Go to Mr.C's Tech room and write your name, grade, and date to join the club.</li>
+            <li>No prior coding experience required</li>
+            <li>Grades 3–8</li>
+            <li>Just show up and start creating!</li>
+          </ul>
+        </div>
+        <hr class="section-divider">
+
+        <h2>What You Don't Need</h2>
+        <div class="card">
+          <ul>
+            <li>A chromebook</li>
+            <li>Coding experience</li>
+            <li>To be "good at math."</li>
+          </ul>
+        </div>
+
+
+        <div class="card">
+          <h2>What to Expect at our Coding club</h2>
+          <ul>
+            <!--We must here about the meetings:  Meetings begin with a short introduction or announcement -->
+            <li><strong>Coding-together</strong>: Members use Makecode Arcade to build games while doing "follow the leader" steps.</li>
+            <li><strong>Help and Teamwork</strong>: Leaders and members help each other when someone is stuck.</li>
+            <li><strong>No experience needed</strong>: Beginners are always welcome.</li>
+            <li><strong>Fun Challenges</strong>: We give out fun challenges to do for rewards.</li>
+            <li><strong>Share & Play</strong>: Members get time to play and share their games.</li>
+          </ul>
+        </div>
+
+
+
+        <div class="card">
+          <h2>Club Guidelines</h2>
+          
+            <ul>
+              <li>Be respectful and supportive</li>
+              <li>Help others learn</li>
+              <li>No misuse of computers</li>
+              <li>Have fun!</li>
+            </ul>
+        </div>
+      
+        <div class="card">
+          <h2>Why I joined?</h2>
+          <p>Here are some reasons from our members on why they decided to join the club.</p>
+          <ul>
+            <li><strong>(NAME)</strong> - (Reason Why?)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>FAQ</h2>
+          <p>Here are the most asked questions answered for anyone with these same questions.</p>
+          <details>
+            <summary>Do I need coding experience to join?</summary>
+            <p>No. Beginners are welcome, and we help members learn step by step.</p>
+          </details>
+          <br>
+          <details>
+            <summary>What grades can join the club?</summary>
+            <p>Any student from 3rd-8th will be allowed to join.</p>
+          </details>
+          <br>
+          <details>
+            <summary>What do I need to bring?</summary>
+            <p>You only need to bring a logical, and creative mindset. No extra equipment needed</p>
+          </details>
+          <br>
+          <details>
+            <summary>What do we do during meetings?</summary>
+            <p>Members talk about ideas on what they think we should do for the club and what we are looking forward to.</p>
+          </details>
+          <br>
+          <details>
+            <summary>How do parents or students contact the club?</summary>
+            <p>Use the contact form on the website. We respond using school-approved tools.</p>
+          </details>
+        </div>
+
+
+
+
+
+
+        
+      </section>
+      <section id="leadership">
+        <!-- LEADERSHIP -->
+      
+        <h2>Club Leadership</h2>
+        <div class="card">
+          <ul>
+            <li>President: Cruz Le</li>
+            <li>Vice President: Owen Taylor</li>
+            <li>Advisor: Mr.C, Nick Broderick, Jamison Hester</li>
+            <li>Student Teacher: Niko Vathis</li>
+            <li>Treasurer: Charlotte Cordisco</li>
+            <li>Other Special Thanks: Jude Sarti, Branden Leonido-Tsuchida, All Club Members</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!--Bonus Section: Not needed for web bar. More like a dev tool than an actual movement area -->
+      <section id="versions">
+        <h2>Website Version History</h2>
+
+        <div class="card">
+          <h3>v1.0 — Launch</h3>
+          <p>
+            Initial release of the SITCC website with club information,
+            games, schedules, and community sections.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>v1.1 — Images + Polish</h3>
+          <p>
+            Added visual improvements, animations, tutorials,
+            responsive design updates, and site polish.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>v1.2 — Planned Automation</h3>
+          <p>
+            Planned achievement automation and future Google Sheets integration.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>v2.0 — Planned Redesign</h3>
+          <p>
+            Future redesign with branding updates, graphics,
+            improved layouts, and gallery upgrades.
+          </p>
+        </div>
+      </section>
+      
+
+      
+
+      
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" class="scroll-top" aria-label="Scroll to top" title="Scroll to top">↑</a>
+    
+    <p style="font-size:0.85em;color:#94a3b8;text-align:center;">
+      This website is managed by students of SITCC under faculty supervision.
+      All activities follow St. Ignatius School guidelines.
+    </p>
+
+    
+
+    <!-- FOOTER -->
+    <footer>
+      <p style="font-size: 0.8em; color: #94a3b8;text-align:center;">
+      SITCC Website v1.1 • Last updated May 2026
+      
+      </p>
+      © 2026 St. Ignatius Tigers Coding Club (SITCC)
+    </footer>
+
+
+
+    <div id="loader">
+      <h1>SITCC</h1>
+      <p>Loading arcade...</p>
+    </div>
+
+
+
+
+    <!-- Script --->
+    <script>
+      const prefersReducedMotion =
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const toggleButton = document.getElementById("toggle-theme");
+      const body = document.body;
+
+        // Apply saved theme on page load
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        body.classList.add("dark-mode");
+      }
+
+      // Toggle theme and save preference
+      toggleButton.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const newTheme = body.classList.contains("dark-mode") ? "dark" : "light";
+        localStorage.setItem("theme", newTheme);
+      });
+      const scrollTopBtn = document.querySelector('.scroll-top');
+
+      scrollTopBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // prevent default anchor behavior
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // smooth scroll to top
+        });
+      });
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) { // show after scrolling 200px
+          scrollTopBtn.classList.add('show');
+        } else {
+          scrollTopBtn.classList.remove('show');
+        }
+      });
+      const colors = ["#38bdf8", "#22d3ee", "#a5f3fc"];
+      if (!prefersReducedMotion) {
+        document.addEventListener("mousemove", (e) => {
+          const pixel = document.createElement("div");
+          pixel.className = "pixel";
+          pixel.style.background = colors[Math.floor(Math.random() * colors.length)];
+          pixel.style.left = e.clientX + "px";
+          pixel.style.top = e.clientY + "px";
+
+          document.body.appendChild(pixel);
+          setTimeout(() => pixel.remove(), 600);
+        });
+      }
+      const burstColors = ["#38bdf8", "#22d3ee", "#a5f3fc"];
+      if (!prefersReducedMotion) {
+        document.addEventListener("click", (e) => {
+          for (let i = 0; i < 12; i++) {
+            const pixel = document.createElement("div");
+            pixel.className = "pixel-burst";
+
+            const angle = Math.random() * 2 * Math.PI;
+            const distance = Math.random() * 20 + 10;
+
+            pixel.style.left = e.clientX + "px";
+            pixel.style.top = e.clientY + "px";
+            pixel.style.background =
+              burstColors[Math.floor(Math.random() * burstColors.length)];
+
+            document.body.appendChild(pixel);
+
+            pixel.animate(
+              [
+                { transform: "translate(0,0)", opacity: 1 },
+                {
+                  transform: `translate(${Math.cos(angle) * distance}px,
+                                        ${Math.sin(angle) * distance}px)`,
+                  opacity: 0
+                }
+              ],
+              {
+                duration: 500,
+                easing: "ease-out"
+              }
+            );
+
+            setTimeout(() => pixel.remove(), 500);
+          }
+        });
+      }
+      document.querySelectorAll(".copy-btn").forEach(button => {
+        button.addEventListener("click", () => {
+          const codeBlock = button.nextElementSibling.querySelector("code");
+          const code = codeBlock.innerText;
+
+          navigator.clipboard.writeText(code).then(() => {
+            button.textContent = "Copied!";
+            button.classList.add("copied");
+
+            setTimeout(() => {
+              button.textContent = "Copy";
+              button.classList.remove("copied");
+            }, 1500);
+          });
+        });
+      });
+      function updateClubStatus() {
+        const statusEl = document.getElementById("club-status");
+        const now = new Date();
+
+        const month = now.getMonth(); // Jan = 0
+        const date = now.getDate();
+        const day = now.getDay(); // Friday = 5
+
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+
+        const currentTime = hours * 60 + minutes;
+        const start = 12 * 60;      // 12:00 PM
+        const end = 12 * 60 + 40;   // 12:40 PM
+
+        // Reset classes
+        statusEl.className = "club-status";
+
+        /*
+          SUMMER BREAK
+          June 3 → August 15
+          Adjust dates whenever needed
+        */
+        const isSummerBreak =
+          (month === 4 && date >= 28) ||  // May 28+
+          month === 5 ||                  // June
+          month === 6 ||                  // July
+          (month === 7 && date < 12);     // Before Aug 12
+
+        if (isSummerBreak) {
+          statusEl.textContent =
+            "☀️ Summer Break — See You Next School Year!";
+          statusEl.classList.add("summer");
+          return;
+        }
+
+        // LIVE NOW
+        if (day === 5 && currentTime >= start && currentTime <= end) {
+          statusEl.textContent =
+            "🟢 Live Now – Coding Club in Session!";
+          statusEl.classList.add("live");
+
+        // TODAY
+        } else if (day === 5 && currentTime < start) {
+          statusEl.textContent =
+            "🟡 Today @ Lunch – Get Ready!";
+          statusEl.classList.add("today");
+
+        // DEFAULT
+        } else {
+          statusEl.textContent =
+            "🔵 Next Meeting: Friday @ Lunch";
+          statusEl.classList.add("upcoming");
+        }
+        console.log({
+          month,
+          date,
+          isSummerBreak
+        });
+      }
+
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+
+        setTimeout(() => {
+          loader.classList.add("hidden");
+
+          //remove from DOM after fade
+          setTimeout(() => loader.remove(), 500);
+        }, 800); // delay makes it feel intentional
+      });
+      document.querySelectorAll(".quiz").forEach((quiz) => {
+        const options = quiz.querySelectorAll(".quiz-option");
+        const feedback = quiz.querySelector(".quiz-feedback");
+
+        options.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            if (btn.dataset.correct === "true") {
+              feedback.textContent = "✅ Correct!";
+              feedback.style.color = "#22c55e";
+            } else {
+              feedback.textContent = "❌ Try again!";
+              feedback.style.color = "#ef4444";
+            }
+          });
+        });
+      });
+      // Run on load
+      updateClubStatus();
+      setInterval(updateClubStatus, 60000);
+    </script>
+  </body>
+    
+ 
+</html>
 
