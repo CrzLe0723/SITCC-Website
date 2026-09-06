@@ -91,7 +91,7 @@ A place to highlight members, projects, achievements, and club news.
 
 ## 🚧 Future Plans
 
-The website is still being developed.
+The website is released and is currently getting updated.
 
 Planned improvements include:
 
