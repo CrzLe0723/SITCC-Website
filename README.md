@@ -1,5 +1,6 @@
-# 🐯 SITCC Website
 [![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
+# 🐯 SITCC Website
+
 The official website for the **St. Ignatius Tigers Coding Club (SITCC)**.
 
 SITCC is a student-led coding club where students learn programming, make games, participate in challenges, and share their creations with other students.
