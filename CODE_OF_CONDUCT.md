@@ -3,7 +3,9 @@
 **Version 2.0**
 
 Last updated: September 2026
+
 **SITCC Code of Conduct v2.0**
+
 *St. Ignatius Coding Club*
 
 
