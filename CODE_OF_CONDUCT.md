@@ -171,6 +171,15 @@ You do **not** need to have complete evidence before making a report.
 
 If you are unsure whether something violates this Code of Conduct, you may still report it.
 
+## Contact SITCC
+
+If you have questions about this Code of Conduct, need further clarification, or are a parent or guardian who would like to contact SITCC directly, you may email:
+
+**[cruzle0723@gmail.com](mailto:cruzle0723@gmail.com)**
+
+Please use the reporting form for reporting a Code of Conduct concern whenever possible. For general questions, clarification, or parent/guardian communication, email is welcome.
+
+
 ---
 
 # 7. Handling Reports
