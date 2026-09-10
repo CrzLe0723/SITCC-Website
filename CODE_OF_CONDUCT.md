@@ -134,6 +134,7 @@ When SITCC activities take place on school property or as part of a school activ
 # 5. Leadership Responsibilities
 
 SITCC officers and other authorized leaders are responsible for helping maintain a safe and productive community.
+SITCC officers and leaders are subject to this Code of Conduct just like all other members. Holding a leadership position does not exempt anyone from these standards.
 
 Leaders should:
 
@@ -153,7 +154,7 @@ When a situation involves potential danger, threats, serious harassment, abuse, 
 
 # 6. Reporting a Concern
 
-If you experience or witness behavior that violates this Code of Conduct, you can report it to SITCC leadership.
+If you experience or witness behavior that may violate this Code of Conduct, you can report it to SITCC leadership through the official reporting form.
 
 Reports may be submitted through the official SITCC reporting form:
 
@@ -199,6 +200,7 @@ Depending on the situation, leaders may:
 Reports will be handled with discretion. However, **confidentiality cannot be guaranteed in situations where disclosure is necessary for someone's safety or is required by school policy or another applicable rule.**
 
 SITCC will not publicly share unnecessary personal information about people involved in a report.
+A report will not result in disciplinary action simply because the concern could not be substantiated, provided the report was made in good faith.
 
 ---
 
@@ -286,7 +288,7 @@ When appropriate, an authorized adult, teacher, parent/guardian, or school admin
 Severe misconduct, serious harassment, threats, intentional harm, repeated serious violations, or behavior that makes continued participation unsafe or impractical.
 
 **Possible response:**
-Removal from SITCC activities and/or official SITCC community spaces.
+Removal from SITCC activities and/or official SITCC community spaces, subject to applicable school policies and the authority of the school.
 
 Where required or appropriate, the matter may also be referred to school administration or another responsible authority.
 
@@ -306,6 +308,8 @@ Examples include:
 * Conduct requiring immediate adult or school intervention
 
 In these situations, SITCC leadership may immediately restrict participation and contact an appropriate adult, school official, parent/guardian, or other responsible authority.
+
+The SITCC reporting form and contact email should not be used for emergencies. If someone is in immediate danger, contact a trusted adult or appropriate emergency service immediately.
 
 ---
 
