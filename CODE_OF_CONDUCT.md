@@ -8,6 +8,7 @@ Last updated: September 2026
 
 *St. Ignatius Coding Club*
 
+---
 
 The St. Ignatius Coding Club (SITCC) is committed to providing a safe, welcoming, respectful, and collaborative environment where students can learn, create, experiment, and grow through technology.
 
