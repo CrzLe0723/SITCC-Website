@@ -154,7 +154,7 @@ When a situation involves potential danger, threats, serious harassment, abuse, 
 
 # 6. Reporting a Concern
 
-If you experience or witness behavior that may violate this Code of Conduct, you can report it to SITCC leadership through the official reporting form.
+If you experience or witness behavior that may violate this Code of Conduct, reports may be submitted through the official SITCC reporting form.
 
 Reports may be submitted through the official SITCC reporting form:
 
@@ -309,7 +309,7 @@ Examples include:
 
 In these situations, SITCC leadership may immediately restrict participation and contact an appropriate adult, school official, parent/guardian, or other responsible authority.
 
-The SITCC reporting form and contact email should not be used for emergencies. If someone is in immediate danger, contact a trusted adult or appropriate emergency service immediately.
+The SITCC reporting form and contact email are not emergency services. If someone is in immediate danger, contact a trusted adult or appropriate emergency service immediately.
 
 ---
 
@@ -382,6 +382,6 @@ For additional information about the Contributor Covenant, including its FAQ and
 https://www.contributor-covenant.org/
 
 ---
-
+Last updated: September 2026
 **SITCC Code of Conduct v2.0**
 *St. Ignatius Coding Club*
