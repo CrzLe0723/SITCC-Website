@@ -1,6 +1,10 @@
 # SITCC Code of Conduct
 
 **Version 2.0**
+Last updated: September 2026
+**SITCC Code of Conduct v2.0**
+*St. Ignatius Coding Club*
+
 
 The St. Ignatius Coding Club (SITCC) is committed to providing a safe, welcoming, respectful, and collaborative environment where students can learn, create, experiment, and grow through technology.
 
@@ -382,6 +386,3 @@ For additional information about the Contributor Covenant, including its FAQ and
 https://www.contributor-covenant.org/
 
 ---
-Last updated: September 2026
-**SITCC Code of Conduct v2.0**
-*St. Ignatius Coding Club*
