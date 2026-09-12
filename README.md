@@ -1,18 +1,3 @@
-## 🛠️ Technologies & Infrastructure
-
-The SITCC Website is built and maintained using the following tools and services:
-
-| Technology | Purpose |
-|---|---|
-| [GitHub](https://github.com/) | Source control, issues, pull requests, and collaboration |
-| [Vercel](https://vercel.com/) | Website hosting and deployments |
-| [Make](https://www.make.com/) | Automation between GitHub and Discord |
-| [Discord](https://discord.com/) | SITCC communication and automated development notifications |
-
-[![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
-[![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
-[![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?logo=make&logoColor=white)](https://www.make.com/)
-[![Discord](https://img.shields.io/badge/Notifications-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/)
 # 🐯 SITCC Website
 
 The official website for the **St. Ignatius Tigers Coding Club (SITCC)**.
@@ -62,6 +47,22 @@ SITCC-Website/
 │
 └── README.md           # Project documentation
 ```
+### 🛠️ Technologies & Infrastructure
+
+The SITCC Website is built and maintained using the following tools and services:
+
+| Technology | Purpose |
+|---|---|
+| [GitHub](https://github.com/) | Source control, issues, pull requests, and collaboration |
+| [Vercel](https://vercel.com/) | Website hosting and deployments |
+| [Make](https://www.make.com/) | Automation between GitHub and Discord |
+| [Discord](https://discord.com/) | SITCC communication and automated development notifications |
+
+[![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
+[![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
+[![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?logo=make&logoColor=white)](https://www.make.com/)
+[![Discord](https://img.shields.io/badge/Notifications-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/)
+
 ## 🎮 MakeCode Arcade
 
 SITCC uses MakeCode Arcade to teach students programming and game development.
