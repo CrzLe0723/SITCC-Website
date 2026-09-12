@@ -103,7 +103,7 @@ Not every Pull Request will necessarily be accepted.
 
 Please do not report security vulnerabilities publicly in a GitHub Issue if the issue could expose a secret, private information, or a serious security vulnerability.
 
-See SECURITY.md for information about reporting security issues.
+See [SECURITY](SECURITY.md) for information about reporting security issues.
 
 ## 📜 Content and Assets
 
