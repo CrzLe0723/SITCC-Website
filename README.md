@@ -60,16 +60,25 @@ The SITCC Website is built and maintained using the following technologies, tool
 | Google Forms | Forms and submissions |
 | Google Docs / Slides | Club documentation and presentations |
 
+### Technologies
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 [![MakeCode Arcade](https://img.shields.io/badge/Game%20Development-MakeCode%20Arcade-59C059?logo=microsoft&logoColor=white)](https://arcade.makecode.com/)
+
+### Infrastructure
+
 [![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
 [![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 [![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?logo=make&logoColor=white)](https://www.make.com/)
 [![Discord](https://img.shields.io/badge/Notifications-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![GitHub Issues](https://img.shields.io/github/issues/CrzLe0723/SITCC-Website)
-![MakeCode Arcade](https://img.shields.io/badge/Game%20Development-MakeCode%20Arcade-59C059?logo=microsoft&logoColor=white)
+
+### Repository
+
+[![GitHub Issues](https://img.shields.io/github/issues/CrzLe0723/SITCC-Website)](https://github.com/CrzLe0723/SITCC-Website/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/CrzLe0723/SITCC-Website)](https://github.com/CrzLe0723/SITCC-Website/pulls)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/CrzLe0723/SITCC-Website)](https://github.com/CrzLe0723/SITCC-Website/commits/main)
 
 ## 🎮 MakeCode Arcade
 
