@@ -79,6 +79,7 @@ The SITCC Website is built and maintained using the following technologies, tool
 [![GitHub Issues](https://img.shields.io/github/issues/CrzLe0723/SITCC-Website)](https://github.com/CrzLe0723/SITCC-Website/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/CrzLe0723/SITCC-Website)](https://github.com/CrzLe0723/SITCC-Website/pulls)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/CrzLe0723/SITCC-Website)](https://github.com/CrzLe0723/SITCC-Website/commits/main)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/CrzLe0723/SITCC-Website)
 
 ## 🎮 MakeCode Arcade
 
