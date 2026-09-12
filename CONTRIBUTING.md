@@ -84,7 +84,7 @@ What you changed
 Why you changed it
 How you tested it
 Any additional information reviewers should know
-##🔍 Pull Request Review
+## 🔍 Pull Request Review
 
 Pull Requests may be reviewed before being merged.
 
@@ -99,13 +99,13 @@ Needs additional testing or documentation
 
 Not every Pull Request will necessarily be accepted.
 
-##🔐 Security Issues
+## 🔐 Security Issues
 
 Please do not report security vulnerabilities publicly in a GitHub Issue if the issue could expose a secret, private information, or a serious security vulnerability.
 
 See SECURITY.md for information about reporting security issues.
 
-##📜 Content and Assets
+## 📜 Content and Assets
 
 Only contribute content, images, icons, music, code, or other materials that you have permission to use.
 
