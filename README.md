@@ -26,50 +26,41 @@ It includes:
 - 👑 Club leadership
 - 📜 Website version history
 
-## 🛠️ Technologies
-
-The website currently uses:
-
-- HTML
-- CSS
-- JavaScript
-- GitHub
-- MakeCode Arcade
-- Google Forms
-- Google Docs / Slides
-- Vercel
-- Make
-- Discord
-
 ## 📁 Project Structure
 
 ```text
 SITCC-Website/
 │
-├── index.html          # Main website page
-├── style.css           # Website styling
-├── script.js           # Website functionality
 ├── assets/             # Images, icons, and other assets
-│
+├── data/               # Website data
+├── notes/              # Development notes
+├── pages/              # Individual website pages
+├── .gitignore          # Git ignore rules
+├── CONTRIBUTING.md     # Contribution guidelines
+├── NOTICE.md           # Copyright and usage notice
+├── index.html          # Main website entry point
+├── style.css           # Website styling
+├── script.js            # Website functionality
 └── README.md           # Project documentation
 ```
-### 🛠️ Technologies & Infrastructure
+## 🛠️ Technologies & Infrastructure
 
-The SITCC Website is built and maintained using the following tools and services:
+The SITCC Website is built and maintained using the following technologies, tools, and services:
 
 | Technology | Purpose |
 |---|---|
-| [GitHub](https://github.com/) | Source control, issues, pull requests, and collaboration |
-| [Vercel](https://vercel.com/) | Website hosting and deployments |
-| [Make](https://www.make.com/) | Automation between GitHub and Discord |
-| [Discord](https://discord.com/) | SITCC communication and automated development notifications |
 | HTML | Website structure |
 | CSS | Website styling |
 | JavaScript | Website functionality |
 | MakeCode Arcade | Game development and programming education |
+| GitHub | Source control, issues, pull requests, and collaboration |
+| Vercel | Website hosting and deployments |
+| Make | Automation between GitHub and Discord |
+| Discord | SITCC communication and automated development notifications |
 | Google Forms | Forms and submissions |
 | Google Docs / Slides | Club documentation and presentations |
 
+[![MakeCode Arcade](https://img.shields.io/badge/Game%20Development-MakeCode%20Arcade-59C059?logo=microsoft&logoColor=white)](https://arcade.makecode.com/)
 [![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
 [![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 [![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?logo=make&logoColor=white)](https://www.make.com/)
