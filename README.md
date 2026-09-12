@@ -4,6 +4,17 @@ The official website for the **St. Ignatius Tigers Coding Club (SITCC)**.
 
 SITCC is a student-led coding club where students learn programming, make games, participate in challenges, and share their creations with other students.
 
+## 📄 Copyright & Usage
+
+Copyright © 2026 Cruz Le. All rights reserved.
+
+This repository is publicly available so that people can view and study the source code for educational and informational purposes.
+
+Viewing the source code does not grant permission to copy, redistribute, publish, or incorporate the source code or substantial portions of it into another project. Permission is required before reusing the project's original source code outside of the permissions provided by GitHub.
+
+Third-party code, libraries, assets, images, fonts, logos, trademarks, and other materials are subject to their respective licenses or ownership rights and are not covered by this notice.
+
+
 ## 🌐 About the Website
 
 The SITCC website is designed to be the central hub for the club.
@@ -57,6 +68,12 @@ The SITCC Website is built and maintained using the following tools and services
 | [Vercel](https://vercel.com/) | Website hosting and deployments |
 | [Make](https://www.make.com/) | Automation between GitHub and Discord |
 | [Discord](https://discord.com/) | SITCC communication and automated development notifications |
+| HTML | Website structure |
+| CSS | Website styling |
+| JavaScript | Website functionality |
+| MakeCode Arcade | Game development and programming education |
+| Google Forms | Forms and submissions |
+| Google Docs / Slides | Club documentation and presentations |
 
 [![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
 [![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
