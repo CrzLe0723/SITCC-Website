@@ -65,6 +65,9 @@ The SITCC Website is built and maintained using the following technologies, tool
 [![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 [![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?logo=make&logoColor=white)](https://www.make.com/)
 [![Discord](https://img.shields.io/badge/Notifications-Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ## 🎮 MakeCode Arcade
 
