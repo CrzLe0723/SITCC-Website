@@ -42,7 +42,7 @@ SITCC-Website/
 ├── NOTICE.md           # Copyright and usage notice
 ├── index.html          # Main website entry point
 ├── style.css           # Website styling
-├── script.js            # Website functionality
+├── script.js           # Website functionality
 └── README.md           # Project documentation
 ```
 ## 🛠️ Technologies & Infrastructure
