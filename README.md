@@ -74,7 +74,7 @@ The SITCC Website is built and maintained using the following technologies, tool
 [![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
 [![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 [![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?logo=make&logoColor=white)](https://www.make.com/)
-[![Discord Server](https://img.shields.io/badge/Join%20our%20Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/9fUWwqc52p)
+[![Discord Server](https://img.shields.io/discord/1547391265342234706?label=online&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/EjyFnCqcKM)
 
 ### Repository
 
