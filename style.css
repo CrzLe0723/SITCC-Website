@@ -64,7 +64,14 @@
       .card h3 { color: #38bdf8; }
 
       iframe { max-width: 100%; border: none; height: auto; aspect-ratio: 4 / 3; }
-      
+
+      .site-subtitle {
+          font-size: 1rem;
+          font-weight: 500;
+          margin: 0.25rem 0 0.5rem;
+          opacity: 0.8;
+          letter-spacing: 0.02em;
+      }
 
       /* FOOTER */
       footer {
