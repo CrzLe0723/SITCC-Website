@@ -555,3 +555,20 @@
         color: #422006;
         border-color: #fbbf24;
       }
+
+     .github-link {
+       display: inline-flex;
+       align-items: center;
+       gap: 8px;
+       padding: 8px 16px;
+       border-radius: 6px;
+       background-color: #f6f8fa;
+       border: 1px solid #d0d7de;
+       text-decoration: none;
+       color: #24292f;
+       transition: background-color 0.2s;
+     }
+     
+     .github-link:hover {
+       background-color: #eaeef2;
+     }
