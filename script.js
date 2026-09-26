@@ -133,13 +133,13 @@ const prefersReducedMotion =
         }
 
         // LIVE NOW
-        if (day === 5 && currentTime >= start && currentTime <= end) {
+        if (day === 3 && currentTime >= start && currentTime <= end) {
           statusEl.textContent =
             "🟢 Live Now – Coding Club in Session!";
           statusEl.classList.add("live");
 
         // TODAY
-        } else if (day === 5 && currentTime < start) {
+        } else if (day === 3 && currentTime < start) {
           statusEl.textContent =
             "🟡 Today @ Lunch – Get Ready!";
           statusEl.classList.add("today");
@@ -147,7 +147,7 @@ const prefersReducedMotion =
         // DEFAULT
         } else {
           statusEl.textContent =
-            "🔵 Next Meeting: Friday @ Lunch";
+            "🔵 Next Meeting: Wednesday @ Lunch";
           statusEl.classList.add("upcoming");
         }
         console.log({
