@@ -94,8 +94,12 @@
       }
 
       /* LINKS - GLOBAL */
-      a { color: #38bdf8; text-decoration: none; }
-      a:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+      a {
+         color: #38bdf8;
+         text-decoration: underline;
+         text-underline-offset: 2px;
+     }
+      a:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-decoration: none;}
 
       /* SCROLL TO TOP BUTTON */
       .scroll-top {
