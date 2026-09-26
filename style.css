@@ -73,6 +73,18 @@
           letter-spacing: 0.02em;
       }
 
+     .skip-link {
+       position: absolute;
+       left: -9999px;
+       top: 10px;
+     }
+     
+     .skip-link:focus {
+       left: 10px;
+       z-index: 9999;
+       padding: 10px;
+     }
+
       /* FOOTER */
       footer {
         text-align: center;
