@@ -570,8 +570,8 @@
       }
       
       .github-corner-left svg {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         fill: #38bdf8;  /* Your primary cyan color */
         transition: fill 0.3s;
         filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.3));
