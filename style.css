@@ -556,31 +556,37 @@
         border-color: #fbbf24;
       }
 
-     .github-corner {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 15px;
-      background-color: #f0f0f0;
-      border-radius: 25px;
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.3s;
-      z-index: 100;
-    }
-    
-    .github-corner:hover {
-      background-color: #333;
-      color: #fff;
-    }
-    
-    .github-corner svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-    }
+      .github-corner-left {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        text-decoration: none;
+        z-index: 100;
+        transition: transform 0.3s, opacity 0.3s;
+      }
+      
+      .github-corner-left:hover {
+        transform: scale(1.15);
+      }
+      
+      .github-corner-left svg {
+        width: 40px;
+        height: 40px;
+        fill: #38bdf8;  /* Your primary cyan color */
+        transition: fill 0.3s;
+        filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.3));
+      }
+      
+      .github-corner-left:hover svg {
+        fill: #0ea5e9;  /* Lighter cyan on hover */
+        filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+      }
+      
+      /* Dark mode support */
+      body.dark-mode .github-corner-left svg {
+        fill: #63C5FF;
+      }
+      
+      body.dark-mode .github-corner-left:hover svg {
+        fill: #A3CFFF;
+      }
