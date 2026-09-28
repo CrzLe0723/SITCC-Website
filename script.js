@@ -150,11 +150,7 @@ const prefersReducedMotion =
             "🔵 Next Meeting: Wednesday @ Lunch";
           statusEl.classList.add("upcoming");
         }
-        console.log({
-          month,
-          date,
-          isSummerBreak
-        });
+
       }
 
       window.addEventListener("load", () => {
