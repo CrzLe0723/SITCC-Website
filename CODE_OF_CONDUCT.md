@@ -70,8 +70,8 @@ The following behaviors are not acceptable within SITCC.
 * Harassing, intimidating, threatening, or bullying another person.
 * Targeting someone because of their identity, background, abilities, beliefs, experience level, or other personal characteristics.
 * Repeatedly making someone uncomfortable after they have asked you to stop.
-* Sexual harassment, sexualized language, sexual attention, or sexual advances.
-* Sharing sexualized or otherwise inappropriate content in SITCC spaces.
+* Inappropriate harassment, inappropriate language, inappropriate attention, or inappropriate advances.
+* Sharing inappropriate content in SITCC spaces.
 
 ### Personal Attacks
 
