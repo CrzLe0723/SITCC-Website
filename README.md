@@ -33,17 +33,38 @@ It includes:
 ```text
 SITCC-Website/
 │
-├── assets/             # Images, icons, and other assets
-├── data/               # Website data
-├── notes/              # Development notes
-├── pages/              # Individual website pages
-├── .gitignore          # Git ignore rules
-├── CONTRIBUTING.md     # Contribution guidelines
-├── NOTICE.md           # Copyright and usage notice
-├── index.html          # Main website entry point
-├── style.css           # Website styling
-├── script.js           # Website functionality
-└── README.md           # Project documentation
+├── assets/
+│   └── images/
+│       ├── icons/
+│       │   └── SITCC_FavIcon.png
+│       └── logos/
+│           └── SITCC-Tiger-Badge.svg
+├── data/
+│   └── test.json
+├── notes/
+│   ├── DECISIONS.md
+│   ├── DEVELOPMENT.md
+│   ├── NOTES.md
+│   └── QA.md
+├── pages/
+│   ├── Achievements.html
+│   ├── Community.html
+│   ├── Contact.html
+│   ├── Games.html
+│   ├── Home.html
+│   ├── Join.html
+│   ├── News.html
+│   ├── Tutorials.html
+│   └── Wiki.html
+├── .gitignore
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── index.html
+├── NOTICE.md
+├── README.md
+├── script.js
+├── SECURITY.md
+└── style.css
 ```
 ## 🛠️ Technologies & Infrastructure
 
