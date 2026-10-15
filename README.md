@@ -88,15 +88,15 @@ The SITCC Website is built and maintained using the following technologies, tool
 ### Technologies
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
-[![MakeCode Arcade](https://img.shields.io/badge/Game%20Development-MakeCode%20Arcade-59C059?logo=microsoft&logoColor=white)](https://arcade.makecode.com/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![MakeCode Arcade](https://img.shields.io/badge/Game%20Development-MakeCode%20Arcade-59C059?style=for-the-badge&logo=microsoft&logoColor=white)](https://arcade.makecode.com/)
 
 ### Infrastructure
 
-[![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
-[![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
-[![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?logo=make&logoColor=white)](https://www.make.com/)
+[![GitHub](https://img.shields.io/badge/Source%20Control-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CrzLe0723/SITCC-Website)
+[![Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+[![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?style=for-the-badge&logo=make&logoColor=white)](https://www.make.com/)
 [![Discord Server](https://img.shields.io/discord/1547391265342234706?label=online&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/EjyFnCqcKM)
 
 ### Repository
