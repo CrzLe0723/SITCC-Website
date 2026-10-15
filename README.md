@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://sitcc-website.vercel.app/">
-    <img src="https://raw.githubusercontent.com/CrzLe0723/SITCC-Website/refs/heads/main/asests/images/banners/SITCC_Banners.png" alt="SITCC Banner" width="100%">
+    <img src="https://raw.githubusercontent.com/CrzLe0723/SITCC-Website/refs/heads/main/assets/images/icons/SITCC_FavIcon.png" alt="SITCC Logo" width="100%">
   </a>
 
 
