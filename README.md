@@ -45,6 +45,8 @@ SITCC-Website/
 │
 ├── assets/
 │   └── images/
+|       ├── banners/
+|       |   └── SITCC_Banners.png
 │       ├── icons/
 │       │   └── SITCC_FavIcon.png
 │       └── logos/
@@ -69,11 +71,11 @@ SITCC-Website/
 ├── .gitignore
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
-├── index.html
 ├── NOTICE.md
 ├── README.md
-├── script.js
 ├── SECURITY.md
+├── index.html
+├── script.js
 └── style.css
 ```
 ## 🛠️ Technologies & Infrastructure
