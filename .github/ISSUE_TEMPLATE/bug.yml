@@ -1,0 +1,70 @@
+name: Bug Report
+description: Report a problem or unexpected behavior in Sticker Studio
+title: "[Bug] "
+labels:
+  - "type: bug"
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem you encountered.
+      placeholder: Explain what went wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Describe the steps needed to reproduce the problem.
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. See...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: Describe the expected result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What happened instead?
+      placeholder: Describe what actually happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots if they help explain the problem.
+      placeholder: Drag and drop screenshots here.
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: "Example: Chrome 154"
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating System
+      placeholder: "Example: Windows 11"
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Add anything else that may help investigate the problem.
+      placeholder: Additional context, error messages, or relevant information.
