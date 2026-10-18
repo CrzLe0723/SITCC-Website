@@ -1,0 +1,51 @@
+name: Documentation
+description: Create a documentation task for Sticker Studio
+title: "[Docs] "
+labels:
+  - ["documentation"]
+body:
+  - type: textarea
+    id: documentation
+    attributes:
+      label: Documentation
+      description: What needs to be documented?
+      placeholder: Describe the documentation that needs to be created or updated.
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Why is this documentation needed?
+      placeholder: Explain what this documentation will help users, contributors, or maintainers understand.
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Content
+      description: What should the documentation cover?
+      placeholder: |
+        - [ ] Topic or concept 1
+        - [ ] Topic or concept 2
+        - [ ] Topic or concept 3
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where should the documentation be added?
+      placeholder: "Example: docs/ARCHITECTURE.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Add any relevant information, references, or requirements.
+      placeholder: Anything else that should be considered?
