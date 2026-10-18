@@ -1,5 +1,5 @@
 name: Documentation
-description: Create a documentation task for Sticker Studio
+description: Create a documentation task for the SITCC
 title: "[Docs] "
 labels:
   - ["documentation"]
