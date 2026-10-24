@@ -22,6 +22,10 @@ If you discover a potential security vulnerability in an official SITCC project,
 
 Instead, report the issue privately to SITCC leadership.
 
+> [!WARNING]
+> **Do not report security vulnerabilities in public issues or pull requests.**
+> Follow the private reporting instructions in this file.
+
 ### What to Include
 
 When possible, include:
