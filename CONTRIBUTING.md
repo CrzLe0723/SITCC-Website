@@ -4,6 +4,11 @@ Thank you for your interest in contributing to the **St. Ignatius Tigers Coding 
 
 The website is a student-led project, and contributions are welcome from SITCC members who want to help improve the website.
 
+> [!IMPORTANT]
+> Before submitting a contribution, review this guide and
+> follow applicable school and SITCC club policies.
+> Do not include passwords, access tokens, or private student information.
+
 ## 📋 Before Contributing
 
 Before making a contribution:
