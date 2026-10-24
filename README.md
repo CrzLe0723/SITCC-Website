@@ -109,6 +109,10 @@ The SITCC Website is built and maintained using the following technologies, tool
 [![Make](https://img.shields.io/badge/Automated%20with-Make-6d00cc?style=for-the-badge&logo=make&logoColor=white)](https://www.make.com/)
 [![Discord Server](https://img.shields.io/discord/1547391265342234706?style=for-the-badge&label=online&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/EjyFnCqcKM)
 
+> [!WARNING]
+> Never commit API keys, passwords, access tokens, or
+> private student information to this repository.
+
 ### Repository
 
 [![GitHub Issues](https://img.shields.io/github/issues/CrzLe0723/SITCC-Website)](https://github.com/CrzLe0723/SITCC-Website/issues)
@@ -209,6 +213,10 @@ Sharing projects
 Helping test new features
 
 All contributions should follow school and club guidelines.
+
+> [!IMPORTANT]
+> Follow the repository's [![contribution guidelines](https://wikipedia.org)] and
+> school and club policies when proposing changes.
 
 ## 🐛 Bug Reports
 
