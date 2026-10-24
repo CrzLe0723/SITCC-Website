@@ -215,7 +215,7 @@ Helping test new features
 All contributions should follow school and club guidelines.
 
 > [!IMPORTANT]
-> Follow the repository's [![contribution guidelines](https://wikipedia.org)] and
+> Follow the repository's [![contribution guidelines](https://github.com/CrzLe0723/SITCC-Website/blob/main/CONTRIBUTING.md)] and
 > school and club policies when proposing changes.
 
 ## 🐛 Bug Reports
@@ -249,6 +249,10 @@ Planned achievement automation and future Google Sheets integration.
 - v2.0 — Planned Redesign
 
 Future redesign with improved branding, graphics, layouts, and gallery features.
+
+> [!NOTE]
+> Upcoming versions describe planned improvements and
+> are not guarantees of release dates or features.
 
 ## 👥 Leadership
 
