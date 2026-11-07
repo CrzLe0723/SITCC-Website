@@ -50,8 +50,8 @@ body:
       description: Drag and drop any relevant screenshots.
       placeholder: Drag and drop screenshots here.
     validations:
-      required: false
       accept: ".png,.jpg,.gif,.svg,.zip"
+      
   - type: upload
     id: attachments
     attributes: 
