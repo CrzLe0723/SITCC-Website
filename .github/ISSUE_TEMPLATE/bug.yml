@@ -43,13 +43,21 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: upload
     id: screenshots
     attributes:
-      label: Screenshots
-      description: Add screenshots if they help explain the problem.
+      label: Upload relevant screenshots
+      description: Drag and drop any relevant screenshots.
       placeholder: Drag and drop screenshots here.
-
+    validations:
+      required: false
+      accept: ".png,.jpg,.gif,.svg,.zip"
+  - type: upload
+    id: attachments
+    attributes: 
+      label: Upload files
+      description: Drag and drop relevant files
+    
   - type: input
     id: browser
     attributes:
