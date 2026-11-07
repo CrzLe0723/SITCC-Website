@@ -48,7 +48,6 @@ body:
     attributes:
       label: Upload relevant screenshots
       description: Drag and drop any relevant screenshots.
-      placeholder: Drag and drop screenshots here.
     validations:
       accept: ".png,.jpg,.gif,.svg,.zip"
       
